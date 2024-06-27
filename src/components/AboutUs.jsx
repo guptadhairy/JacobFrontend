@@ -1,6 +1,6 @@
 import { Heading, Stack, VStack, Text } from '@chakra-ui/react'
 import React from 'react'
-import dhiru from "../assets/dhiru_.jpg"
+import dhiru from "../assets/jac2.jpg"
 import "../styles/home.css";
 
 const AboutUs = () => {
@@ -11,8 +11,8 @@ const AboutUs = () => {
        </VStack>
        <VStack width={["full","50%"]} display={'flex'} justifyContent={"center"}>
               <Heading>About Us </Heading>
-              <Text fontSize={'1.2rem'}>Hello! Welcome to Learnr! Really happy to see you here.</Text>
-              <Text fontSize={'1.2rem'}>Thinking of taking a step towards a mentorship programme? It definitely seems a bit daunting at first. It is never easy to ask for someone's counsel or guidance be it for studies or just in general. So, at Learnr we are here to provide all the necessary counsel you might need for placement preparations, interview experiences, programming, et cetera! For any additional questions, feel free to email us at dhirugupta198@gmail.com</Text>
+              <Text fontSize={'1.2rem'}>Hello! Welcome to JacobWatches! Really happy to see you here.</Text>
+              <Text fontSize={'1.2rem'}>Welcome to JacobWatches, where time is more than just a measurement—it's an expression of style and sophistication. At JacobWatches, we curate a collection of timepieces that blend exquisite craftsmanship with contemporary design, ensuring each piece tells a story of elegance and precision. Whether you're seeking a classic heirloom piece or a modern statement accessory, our commitment to quality ensures that every watch we offer is a testament to luxury and functionality. Discover the perfect watch that not only keeps time but defines it, only at JacobWatches.</Text>
        </VStack>
     </Stack>
   )
