@@ -1,0 +1,12 @@
+.home_img{
+   height: 500px;
+   width: 500px; 
+   border-radius: 50%;
+   object-fit: fill;
+}
+.about_img{
+   height: 590px;
+   width: 550px; 
+   border-radius: 10%;
+   object-fit: cover;
+}
