@@ -2,12 +2,14 @@ import React, {useEffect, useState} from 'react'
 import { Card, CardBody, Stack, Heading,Box, VStack, Input, FormLabel, Button, Textarea } from '@chakra-ui/react'
 import { courseRequest } from '../redux/actions/other'
 import { useDispatch, useSelector } from 'react-redux'
+import watchBg from "../assets/watch_bg.avif";
 import toast from 'react-hot-toast'
 
 const RequestCourse = () => {
   return (
     <div>
-      <VStack height={'100vh'} justifyContent={'center'}>
+      <VStack height={'100vh'} justifyContent={'center'} bg={`url(${watchBg})`} bgSize="cover"
+        bgPosition="center">
       <RequestCard />
       </VStack>
     </div>
@@ -37,7 +39,7 @@ const RequestCard = () =>{
     }
   }, [dispatch, error, stateMessage])
   return(
-      <Card maxW='xl' bg='rgba(0, 28, 28, 0.9)' color={'white'} padding={10}>
+      <Card maxW='xl' padding={10}>
               <CardBody>
                   <Heading  display={'flex'} justifyContent={'center'} >Request a Product</Heading>
                   <Stack mt='6' spacing='3'>
