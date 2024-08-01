@@ -5,6 +5,7 @@ import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay,
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logout } from '../redux/actions/user';
+import logo from "../assets/logo_watch.jpeg";
 
 const Header = ({isAuthenticated=false, user}) => {
     const {isOpen,onOpen,onClose} = useDisclosure();
@@ -22,7 +23,9 @@ const Header = ({isAuthenticated=false, user}) => {
     <Drawer placement='left' isOpen={isOpen} onClose={onClose}>
         <DrawerOverlay backdropFilter={'blur(10px)'}/>
         <DrawerContent>
-            <DrawerHeader textAlign={'center'} justifyContent={'center'} borderBottom={'1px'}>JacobWatches</DrawerHeader>
+            <DrawerHeader textAlign={'center'} justifyContent={'center'} borderBottom={'1px'}>
+                <img src={logo} alt='logo' height={'70px'} />
+            </DrawerHeader>
             <DrawerBody>
                 <VStack spacing={'4'} alignItems={'flex-start'}>
                     <Link onClick={onClose} to='/' >
